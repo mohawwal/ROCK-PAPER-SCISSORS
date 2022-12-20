@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: rgb(148, 148, 148);
+      }
+      #heading {
+        margin: 60px 0px 70px 30px;
+      }
+      #text-a,
+      #text-b,
+      #text-c {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0px;
+        color: rgb(36, 0, 0);
+        text-shadow: 2px 2px 2px rgb(197, 201, 228);
+      }
+      button {
+        border: none;
+      }
+      #result {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 0px;
+      }
+      #btn {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 100px;
+        padding: 0px;
+      }
+      #btn-rock {
+        padding: 30px 19px;
+        border-radius: 60px;
+      }
+      #btn-paper {
+        padding: 34px 21px;
+        border-radius: 40px;
+      }
+      #btn-scissors {
+        padding: 39px 12px;
+        border-radius: 60px;
+      }
+      #btn-rock,
+      #btn-paper,
+      #btn-scissors {
+        margin: 90px 5px 0px;
+        font-family: Verdana, Tahoma, sans-serif;
+      }
+
+      #btn-rock:hover,
+      #btn-paper:hover,
+      #btn-scissors:hover {
+        background-color: black;
+        color: white;
+      }
+
+      #random {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+      }
+      #vs {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #player,
+      #guess,
+      #vs {
+        font-size: 20px;
+      }
+      p {
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Verdana, sans-serif;
+      }
+      #pab {
+        margin-bottom: 3px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1 style="font-size: 35px" id="text-a">ROCK</h1>
+      <h1 style="font-size: 45px" id="text-b">PAPER</h1>
+      <h1 style="font-size: 55px" id="text-c">SCISSORS</h1>
+    </div>
+    <div id="random">
+      <div id="player">PLAYER</div>
+      <div id="vs">VS</div>
+      <div id="guess">GUESS</div>
+    </div>
+    <p id="result">Pick As A Player And I Will Be Your Guess. <br /></p>
+    <div id="btn">
+      <button onclick="rock()" id="btn-rock">ROCK</button>
+      <button onclick="paper()" id="btn-paper">PAPER</button>
+      <button onclick="scissor()" id="btn-scissors">SCISSORS</button>
+    </div>
+    <p id="pab"></p>
+    </p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
